@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mathieu Demers – Développeur Front-End</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Trocchi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img id="logo" src="img/MD_logo_v2.jpg" alt="Logo de Mathieu Demers" />
+      </div>
+      <nav id="nav-container">
+        <ul id="nav-content">
+          <span id="closeBtn">&times;</span>
+          <li><a class="a-nav" href="#apropos">À PROPOS</a></li>
+          <li><a class="a-nav" href="#projets">PROJETS</a></li>
+          <li><a class="a-nav" href="#joindre">CONTACT</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars" id="icon-menu"></i>
+    </header>
+    <main>
+      <section id="introduction">
+        <img
+          id="myPicture"
+          src="img/IMG_20190809_091144.jpg"
+          alt="Photo de Mathieu Demers"
+        />
+        <p>
+          Bonjour, je m'appelle Mathieu Demers et j'aspire à devenir développeur
+          web.<br />
+          Je possède une bonne maîtrise du HTML/CSS et de Javascript.
+        </p>
+      </section>
+      <section id="apropos">
+        <h2>À propos</h2>
+        <hr />
+        <!--
+           - <p>
+           -   Je suis une personne qui aime beaucoup apprendre et qui a un parcours
+           -   plutôt atypique. La musique est une de mes grandes passions que m'a
+           -   d'ailleurs transporté jusqu'à l'université où j'y ai fait un bac en
+           -   enseignement de la musique. Après avoir enseigner pendant trois ans,
+           -   je me suis malheureusement rendu à l'évidence que ce n'était pas un
+           -   métier pour moi et que l'informatique m'attirait depuis longtemps.
+           - </p>
+           -->
+        <p>
+          Bien que l'informatique soit arrivée tard comme choix de carrière dans
+          ma vie, elle a toujours attisé en moi une grande curiosité. Je m'y
+          suis toujours intéressé à partir du moment où nous avons eu notre
+          premier ordinateur ou lorsque j'ai appris des bases de programmation
+          en BASIC sur vieux Vtech ou encore lorsque j'ai découvert le fascinant
+          monde de Linux à l'université. Apprendre ce métier en autodidacte est
+          bien sûr tout un défi, mais c'est surtout une grande source de plaisir
+          et d'émerveillement.
+        </p>
+        <p>
+          Si vous avez envie de travailler avec quelqu'un à l'écoute des gens,
+          qui s'adapte facilement, qui aime apprendre et qui est minutieux, il
+          me fera plaisir de faire parti de votre équipe et de contribuer à vos
+          projets.
+        </p>
+        <button id="cv-button">Voir mon C.V.</button>
+      </section>
+      <section id="projets"></section>
+      <h2>Mes projets</h2>
+      <hr />
+      <div id="work-container">
+        <a href="https://codepen.io/matdem/full/xxwrvBq">
+          <img
+            class="projet"
+            id="projet1"
+            src="img/Screenshot from 2020-08-27 11-27-07.png"
+            alt="Projet Landing Page - freeCodeCamp"
+        /></a>
+        <a href="https://codepen.io/matdem/full/qBWMybq">
+          <img
+            class="projet"
+            id="projet2"
+            src="img/Screenshot from 2020-08-27 11-32-03.png"
+            alt="Projet Tribute to - freeCodeCamp"
+        /></a>
+        <a href="https://codepen.io/matdem/full/poJNQKx">
+          <img
+            class="projet"
+            id="projet3"
+            src="img/Screenshot from 2020-08-27 11-34-06.png"
+            alt="Projet Survey Form - freeCodeCamp"
+        /></a>
+        <a href="https://codepen.io/matdem/full/MWKKXzq">
+          <img
+            class="projet"
+            id="projet4"
+            src="img/Screenshot from 2020-08-27 11-36-45.png"
+            alt="YNAB Duplicate - Projet personnel"
+        /></a>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <ul id="joindre">
+          <li>
+            <a href="mailto:math.demers@protonmail.com">
+              <i class="far fa-envelope" id="email"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/matdem">
+              <i class="fab fa-codepen" id="codepen"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/matdem/">
+              <i class="fab fa-github" id="github"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="copyright"><p>© Mathieu Demers | 2020</p></section>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
