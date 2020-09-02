@@ -211,8 +211,8 @@ footer {
     top: 0;
     right: 0;
     width: 0;
-    padding: 2rem 0 2rem 0;
-    margin: 1rem 0;
+    padding: 1rem 0 2rem 0;
+    margin: 0;
     transition: 300ms;
   }
 
@@ -229,7 +229,7 @@ footer {
     width: 1rem;
     color: #776472;
     font-size: 1.6rem;
-    padding: 0.6rem;
+    padding: 1rem;
   }
 
   #closeBtn:hover {

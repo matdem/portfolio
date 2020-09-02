@@ -14,14 +14,8 @@ function closeNav() {
   closeBtnElt.style.display = "none";
 }
 
-// Events Listener
-
-iconMenuElt.addEventListener("click", openNav);
-
-closeBtnElt.addEventListener("click", closeNav);
-
-smallerScreenWidth.addEventListener("change", function (mm) {
-  if (mm.matches) {
+function addEventToNavAnchor(matchMedia) {
+  if (matchMedia.matches) {
     for (let i = 0; i < anchorNavElts.length; i++) {
       anchorNavElts[i].addEventListener("click", closeNav);
     }
@@ -32,4 +26,15 @@ smallerScreenWidth.addEventListener("change", function (mm) {
     }
     navElt.style.width = "18rem";
   }
-});
+}
+
+// Add Events at run time
+addEventToNavAnchor(smallerScreenWidth);
+
+// Events Listener
+
+iconMenuElt.addEventListener("click", openNav);
+
+closeBtnElt.addEventListener("click", closeNav);
+
+smallerScreenWidth.addListener(addEventToNavAnchor);
