@@ -6,12 +6,13 @@ let navElt = document.getElementById("nav-content"),
 
 function openNav() {
   navElt.style.width = "50vw";
+  closeBtnElt.style.visibility = "visible";
   closeBtnElt.style.display = "block";
 }
 
 function closeNav() {
   navElt.style.width = "0";
-  closeBtnElt.style.display = "none";
+  closeBtnElt.style.visibility = "hidden";
 }
 
 function addEventToNavAnchor(matchMedia) {
