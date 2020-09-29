@@ -87,8 +87,8 @@ main {
 
 #myPicture {
   box-sizing: border-box;
-  width: auto;
-  max-height: 90%;
+  max-width: 90%;
+  height: 90%;
   margin: 0 1rem 1rem 0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   border-radius: 100%;
@@ -161,6 +161,7 @@ footer {
 }
 
 #joindre {
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -298,7 +299,8 @@ footer {
   }
 
   #myPicture {
-    max-height: 70%;
+    max-width: 70%;
+    height: 73%;
   }
 
   #introduction p {
