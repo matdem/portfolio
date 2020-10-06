@@ -73,6 +73,10 @@ main {
   margin: auto;
 }
 
+section {
+  scroll-margin-top: 7.5rem;
+}
+
 #introduction {
   display: flex;
   align-items: center;
